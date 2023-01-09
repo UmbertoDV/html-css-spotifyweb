@@ -10,3 +10,6 @@
 	clear: both;
 	display: table;
 }
+.d-flex{
+	display: flex;
+}
