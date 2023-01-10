@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* General */
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 /* General TAGs */
 footer{
@@ -135,4 +135,130 @@ header .button-upgrade{
     color: white;
     opacity: 100%;
     margin-right: 20px;
+}
+/* FOOTER */
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+    color: #878787;
+}
+footer .song-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+footer .song-info img{
+    height: 70px;
+}
+footer .song-info i:hover{
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    padding-top: 5px;
+}
+footer .song-name > span:first-child{
+    color: white;
+    font-weight: bold;
+}
+footer .progress-bar{
+    width: 300px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #555;
+}
+footer .progress{
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 2px;
+
+    position: relative;
+}
+footer .progress-bar:hover .progress{
+    background-color: green;
+    cursor: pointer;
+}
+footer .progress::after{
+    content: "";
+    display: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #eee;
+
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+footer .progress-bar:hover .progress::after{
+    background-color: #eee;
+    border: 1px solid #555;
+    display: block;
+}
+footer .under-player-buttons{
+    align-items: center;
+    gap: 20px;
+    color: white;
+}
+/* BUTTONS PLAYER */
+footer .buttons-player{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+footer .buttons-player i{
+    margin-right: 10px;
+}
+footer .buttons-player i:hover{
+    cursor: pointer;
+    font-size: 28px;
+    transition: all 0.05s linear;
+}
+/* VOLUME */
+footer .volume{
+    gap: 20px;
+    align-items: center;
+    color: white;
+}
+footer .volume .progress-bar{
+    width: 150px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #555;
+}
+footer .volume .progress{
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #eee;
+    border-radius: 2px;
+
+    position: relative;
+}
+footer .volume .progress-bar:hover .progress{
+    background-color: green;
+    cursor: pointer;
+}
+footer .volume .progress::after{
+    content: "";
+    display: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #eee;
+
+    position: absolute;
+    top: -6px;
+    right: -6px;
+}
+footer .volume .progress-bar:hover .progress::after{
+    background-color: #eee;
+    border: 1px solid #555;
+    display: block;
 }
