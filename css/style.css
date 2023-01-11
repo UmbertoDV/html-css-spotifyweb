@@ -25,6 +25,9 @@ a{
 ul{
     list-style: none;
 }
+.buttons-sm{
+    display: none;
+}
 /* Specific in LAYOUT*/
 .top-content{
     height: calc(100vh - 120px);
@@ -101,6 +104,9 @@ main{
     margin-top: auto;
     margin-bottom: 10px;
 }
+.side-bar .logo-sm{
+    display: none;
+}
 .side-bar hr{
     width: 90%;
 }
@@ -125,7 +131,9 @@ main{
 .side-bar .bottom-side-bar .profile:hover{
     color: white;
 }
-
+.bottom-side-bar-sm{
+    display: none;
+}
 /* HEADER */
 header .button-upgrade{
     padding: 10px 40px;
@@ -269,9 +277,8 @@ footer .volume .progress-bar:hover .progress::after{
 /* MAIN */
 /* LINKs */
 .container{
-    background-color: green;
+    /* background-color: green; */
     padding: 0 20px;
-    max-width: 100%;
     margin: 0 auto;
 }
 main li{
@@ -281,13 +288,154 @@ main li{
 main li:hover a{
     color: white;
 }
+main li a{
+    color: #7d7f84;
+    font-weight: 600;
+}
 main ul{
+    padding: 20px 0;
     text-align: center;
 }
+main nav ul li > div{
+    display: inline;
+    position: relative;
+}
+.green-underline {
+    width: 30px;
+    height: 2px;
+    background-color: #adff2f;
+    margin-left: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 1.3rem;
+    left: 10px;
+}
+/* IMMAGINI */
 main img{
     max-width: 100%;
-    padding: 20px 20px 20px 0;
+    padding: 20px;
+    cursor: pointer;
 }
-main .row{
-    flex-wrap: wrap;
+main h2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+main h4{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+main span{
+    color: #7d7f84;
+    font-weight: bold;
+    font-size: 12px;
+}
+main h5{
+    text-align: center;
+    color: #7d7f84;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+}
+main .popular img{
+    border-radius: 50%;
+    object-fit: cover;
+}
+main .recently,
+main .created
+{
+    margin-bottom: 3rem;
+}
+main .recently i,
+main .created i,
+main .popular i
+{
+    color: white;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+main img:hover{
+    opacity: 0.5;
+}
+main .hover-element{
+    position: relative;
+}
+main .hover-element:hover > i{
+    display: block;
+}
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .side-bar {
+        width: 50px;
+    }
+    main {
+        width: calc(100vw - 50px);
+    }
+    header {
+        width: calc(100% - 50px);
+    }
+    .side-bar .logo,
+    .side-bar .playlists,
+    .side-bar .buttons,
+    .side-bar .bottom-side-bar
+    {
+        display: none;
+    }
+    footer .volume .progress-bar {
+        width: 50px;
+    }
+    .footer-wrapper {
+        padding: 0 20px;
+    }
+    footer .buttons-player {
+        font-size: 20px;
+    }
+    footer .icons-song{
+        display: none;
+    }
+    footer .volume {
+        gap: 5px;
+    }
+    .side-bar .logo-sm{
+        display: block;
+        padding: 10px;
+        height: 50px;
+        margin-bottom: 2rem;
+    }
+    .side-bar{
+        padding: 0;
+    }
+    .buttons-sm{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+    }
+    .bottom-side-bar-sm{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: 10px;
+    }
+    .bottom-side-bar-sm img:last-child{
+        height: 30px;
+        width: 30px;
+        background-color: gray;
+        border-radius: 50%;
+    }
+    .bottom-side-bar-sm img:first-child{
+        width: 33px;
+    }
 }

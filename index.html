@@ -11,8 +11,9 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/12bool.css">
 	<link rel="stylesheet" href="./css/utils.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -20,6 +21,7 @@
 		<div class="side-bar">
 			<picture>
 				<img class="logo" src="./img/logo.svg" alt="Logo Spotify">
+				<img class="logo-sm" src="./img/logo-small.svg" alt="logo-sm">
 			</picture>
 			<div class="buttons">
 				<ul>
@@ -29,6 +31,11 @@
 					<li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a></li>
 					<li><a href="#"><i class="fa-solid fa-book-bookmark"></i> La tua libreria</a></li>
 				</ul>
+			</div>
+			<div class="buttons-sm">
+				<i class="fa-solid fa-house"></i>
+				<i class="fa-solid fa-magnifying-glass"></i>
+				<i class="fa-solid fa-book-bookmark"></i>
 			</div>
 			<div class="playlists">
 				<h1>PLAYLIST</h1>
@@ -57,6 +64,10 @@
 					<span>Jonh Doe</span>
 				</div>
 			</div>
+			<div class="bottom-side-bar-sm">
+				<img src="./img/download.svg" alt="">
+				<img src="./img/profile.svg" alt="">
+			</div>
 		</div>
 		<div class="content">
 			<header>
@@ -68,60 +79,113 @@
 				<div class="container">
 					<nav>
 						<ul>
-							<li><a href="#">Link 1</a></li>
-							<li><a href="#">Link 2</a></li>
-							<li><a href="#">Link 3</a></li>
-							<li><a href="#">Link 4</a></li>
-							<li><a href="#">Link 5</a></li>
-							<li><a href="#">Link 6</a></li>
+							<li>
+								<div>
+									<a href="#">IN EVIDENZA</a>
+									<span class="green-underline"></span>
+								</div>
+							</li>
+							<li><a href="#">PODCAST</a></li>
+							<li><a href="#">CLASSIFICHE</a></li>
+							<li><a href="#">GENERI E MOOD</a></li>
+							<li><a href="#">NUOVE USCITE</a></li>
+							<li><a href="#">SCOPRI</a></li>
 						</ul>
 					</nav>
 					<!-- Recently Played -->
 					<section class="recently">
 						<h2>Ascoltati recentemente</h2>
-						<div class="row d-flex">
-							<div class="col-2">
-								<img src="./img/metal_lifting.jpg" alt="">
+						<div class="row">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/metal_lifting.jpg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Heavy Metal</h4>
+								<h5>Subtitle</h5>
 							</div>
-							<div class="col-2">
-								<img src="./img/stranger.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/stranger.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h4>
+								<h5>Subtitle</h5>
 							</div>
-							<div class="col-2">
-								<img src="./img/aquietplace.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/aquietplace.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>A Quiet Place</h4>
+								<h5>Subtitle</h5>
 							</div>
-							<div class="col-2">
-								<img src="./img/split.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/split.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Split</h4>
+								<h5>Subtitle</h5>
 							</div>
-							<div class="col-2">
-								<img src="./img/cure.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/cure.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>A cure for wellness</h4>
+								<h5>Subtitle</h5>
 							</div>
-							<div class="col-2">
-								<img src="./img/sinister.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/sinister.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Sinister</h4>
+								<h5>Subtitle</h5>
 							</div>
 						</div>
 					</section>
 					<!-- Created for you -->
 					<section class="created">
 						<h2>Creato per Jonh Doe</h2>
-						<div class="row d-flex">
-							<div class="col-2">
-								<img src="./img/radar.jpeg" alt="">
+						<span>Più ascolti, più accurati saranno i suggerimenti.</span>
+						<div class="row">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/radar.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Release Radar</h4>
 							</div>
-							<div class="col-2">
-								<img src="./img/mixdaily.jpeg" alt="">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/mixdaily.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+								<h4>Daily Mix 1</h4>
 							</div>
 						</div>
 					</section>
 					<!-- Popular -->
-					<h2>Artisti più popolari</h2>
-					<div class="row d-flex">
-						<div class="col-2">
-							<img src="./img/sinister.jpeg" alt="">
+					<section class="popular">
+						<h2>Artisti più popolari</h2>
+						<span>Più ascolti, più accurati saranno i suggerimenti.</span>
+						<div class="row">
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/youg.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+							</div>
+							<div class="col-2 col-lg-3 col-sm-6">
+								<div class="hover-element">
+									<img src="./img/einaudi.jpeg" alt="">
+									<i class="fa-regular fa-circle-play"></i>
+								</div>
+							</div>
 						</div>
-						<div class="col-2">
-							<img src="./img/sinister.jpeg" alt="">
-						</div>
-					</div>
+					</section>
 				</div>
 			</main>
 		</div>
@@ -166,5 +230,4 @@
 		 </div>
 	</footer>
 </body>
-
 </html>
